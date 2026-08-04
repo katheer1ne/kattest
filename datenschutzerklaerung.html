@@ -35,6 +35,39 @@
       padding: 48px 0 72px;
       font-family: "Teachers", Helvetica;
     }
+    
+    .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  padding: 10px 16px;
+
+  color: inherit;
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+
+  font-family: "Teachers", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-3px);
+  background-color: rgba(128, 128, 128, 0.12);
+}
+
+.back-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
     h1, h2, h3, h4 { line-height: 1.25; font-family: "Nothing You Could Do", monospace;}
     h1 { margin: 0 0 32px; font-size: clamp(32px, 5vw, 48px); }
     h2 { margin: 48px 0 20px; padding-top: 16px; border-top: 1px solid #e5e5e5; font-size: clamp(24px, 3vw, 32px); }
@@ -51,6 +84,10 @@
 </head>
 <body>
 <main>
+  <a class="back-link" href="./index.html" aria-label="Zurück zur Startseite">
+    ← Zurück zur Übersicht
+  </a>
+  
   <h1>Datenschutzerklärung</h1>
 
   <h2>1. Datenschutz auf einen Blick</h2>

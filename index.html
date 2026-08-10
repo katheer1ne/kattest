@@ -70,7 +70,7 @@
         overflow: hidden;
 
         display: grid;
-        grid-template-columns: 52px 1fr auto;
+        grid-template-columns: 1fr auto;
         align-items: center;
 
         min-height: 118px;
@@ -92,24 +92,6 @@
         transition:
           color 0.28s ease,
           padding 0.28s ease;
-      }
-
-      nav a::before {
-        font-family: "PublicSans", Arial, sans-serif;
-        font-size: 11px;
-        font-weight: 400;
-        letter-spacing: 0.08em;
-        opacity: 0.5;
-        position: relative;
-        z-index: 2;
-      }
-
-      nav a:nth-child(1)::before {
-        content: "01";
-      }
-
-      nav a:nth-child(2)::before {
-        content: "02";
       }
 
       nav a::after {
@@ -178,7 +160,6 @@
 
         nav a {
           min-height: 100px;
-          grid-template-columns: 38px 1fr auto;
           font-size: 22px;
           padding: 0 4px;
         }
@@ -198,7 +179,6 @@
 
         nav a {
           font-size: 20px;
-          grid-template-columns: 34px 1fr auto;
         }
       }
     </style>

@@ -20,8 +20,24 @@
       font-weight: 400;
       font-display: swap;
     }
-    * { box-sizing: border-box; }
+
+    @font-face {
+      font-family: 'NeutralFaceBold';
+      src: url('./fonts/NeutralFaceBold.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'NeutralFaceBold';
+      src: url('./fonts/PublicSans-VariableFont_wght.ttf') format('truetype');
+      font-weight: normal;
+      font-weight: 400;
+      font-style: normal;
+    }
     
+    * { box-sizing: border-box; }
+
     body {
       margin: 0;
       background-color: #2a3f1ae8;

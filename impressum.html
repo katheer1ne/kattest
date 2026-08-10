@@ -1,97 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum</title>
-  <style>
-        @font-face {
-      font-family: "Teachers";
-      src: url("./fonts/Teachers/Teachers-VariableFont_wght.ttf") format("truetype");
-      font-style: normal;
-      font-weight: 400 800;
-      font-display: swap;
-    }
-    
-    @font-face {
-      font-family: "Nothing You Could Do";
-      src: url("./fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf") format("truetype");
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background-color: #2a3f1ae8;
-      color: #ffff;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 1.65;
-    }
-    body a {
-      color: #eaffd9db !important;
-    }
-    main {
-      width: min(900px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 48px 0 72px;
-      font-family: "Teachers", Helvetica;
-    }    
-    .back-link {
-    padding: 8px 12px;
-    border-radius: 25px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 48px;
-    color: inherit;
-    font-family: "Teachers", Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    text-decoration: none;
-    
-    transition:
-      transform 0.2s ease,
-      opacity 0.2s ease,
-      background-color 0.2s ease;
-    }
-    
-    .back-link:hover {
-      transform: translateX(5px);
-      background-color: rgba(128, 128, 128, 0.12);
-    }
-    
-    .back-link:focus-visible {
-      outline: 2px solid currentColor;
-      outline-offset: 4px;
-    }
-    
-    h1, h2 { line-height: 1.25; font-family: "Nothing You Could Do", monospace;}
-    h1 { margin: 0 0 32px; font-size: clamp(32px, 5vw, 48px); }
-    h2 { margin: 40px 0 12px; font-size: clamp(22px, 3vw, 28px); }
-    p, address { margin: 0 0 16px; }
-    address { font-style: normal; }
-    a { color: #1a5fb4; text-decoration: underline; overflow-wrap: anywhere; }
-    @media (max-width: 600px) {
-      main { width: calc(100% - 24px); padding-top: 28px; }
-    }
-  </style>
-</head>
-<body>
-<main>
-    <a class="back-link" href="./index.html" aria-label="Zurück zur Startseite">
-    ← Zurück zur Übersicht
-  </a>
-  
-  <h1>Impressum</h1>
-  <address>Kateryna Pavlenko<br>Erzbergerstr. 21<br>41061 Mönchengladbach</address>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Impressum</title>
+    <style>
+      @font-face {
+        font-family: "NeutralFaceBold";
+        src: url("./fonts/NeutralFaceBold.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
 
-  <h2>Kontakt</h2>
-  <p>Telefon: <a href="tel:017684133920">017684133920</a><br>E-Mail: <a href="mailto:Katia5093310@gmail.com">Katia5093310@gmail.com</a></p>
+      @font-face {
+        font-family: "PublicSans";
+        src: url("./fonts/PublicSans-VariableFont_wght.ttf") format("truetype");
+        font-weight: normal;
+        font-weight: 400;
+        font-style: normal;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #4a4b4d;
+        color: #f2f1f0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+      }
+      body a {
+        color: #eaffd9db !important;
+      }
+      main {
+        width: min(900px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 48px 0 72px;
+        font-family: "PublicSans", Arial;
+      }
+      .back-link {
+        padding: 8px 12px;
+        border-radius: 25px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 48px;
+        color: inherit;
+        font-family: "Teachers", Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
 
-  <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
-  <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-</main>
-</body>
+        transition:
+          transform 0.2s ease,
+          opacity 0.2s ease,
+          background-color 0.2s ease;
+      }
+
+      .back-link:hover {
+        transform: translateX(5px);
+        background-color: rgba(128, 128, 128, 0.12);
+      }
+
+      .back-link:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 4px;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.25;
+        font-family:
+          "NeutralFaceBold",
+          Segoe UI;
+      }
+      h1 {
+        margin: 0 0 32px;
+        font-size: clamp(32px, 5vw, 48px);
+      }
+      h2 {
+        margin: 40px 0 12px;
+        font-size: clamp(22px, 3vw, 28px);
+      }
+      p,
+      address {
+        margin: 0 0 16px;
+      }
+      address {
+        font-style: normal;
+      }
+      a {
+        color: #1a5fb4;
+        text-decoration: underline;
+        overflow-wrap: anywhere;
+      }
+      @media (max-width: 600px) {
+        main {
+          width: calc(100% - 24px);
+          padding-top: 28px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back-link" href="./index.html" aria-label="Zurück zur Startseite"> ← Zurück zur Übersicht </a>
+
+      <h1>Impressum</h1>
+      <address>Kateryna Pavlenko<br />Erzbergerstr. 21<br />41061 Mönchengladbach</address>
+
+      <h2>Kontakt</h2>
+      <p>
+        Telefon: <a href="tel:017684133920">017684133920</a><br />E-Mail:
+        <a href="mailto:Katia5093310@gmail.com">Katia5093310@gmail.com</a>
+      </p>
+
+      <h2>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+      <p>
+        Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+        teilzunehmen.
+      </p>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "NeutralFaceBold";
+  src: url("./fonts/NeutralFaceBold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url("./fonts/PublicSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #4a4b4d;
+  --text: #f2f1f0;
+  --text-soft: #f2f1f0d1;
+  --accent: #2a3f1ae8;
+  --border: #d8d8d8;
+  --content-width: 900px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "PublicSans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--text-soft);
+  overflow-wrap: anywhere;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "NeutralFaceBold", "Segoe UI", Arial, sans-serif;
+  line-height: 1.25;
+}
+
+.legal-page main {
+  width: min(var(--content-width), calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.legal-page h1 {
+  margin: 0 0 32px;
+  font-size: clamp(32px, 5vw, 48px);
+}
+
+.legal-page h2 {
+  margin: 48px 0 20px;
+  padding-top: 16px;
+  font-size: clamp(24px, 3vw, 32px);
+}
+
+.legal-page h3 {
+  margin: 32px 0 12px;
+  font-size: 21px;
+}
+
+.legal-page h4 {
+  margin: 24px 0 10px;
+  font-size: 17px;
+}
+
+.legal-page p {
+  margin: 0 0 16px;
+}
+
+.legal-page address {
+  margin: 0 0 16px;
+  font-style: normal;
+}
+
+.legal-page a:not(.back-link) {
+  text-decoration: underline;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 48px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  color: inherit;
+  font-family: "PublicSans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(5px);
+  background-color: rgba(128, 128, 128, 0.12);
+}
+
+.back-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+.legal-emphasis {
+  font-weight: 700;
+  font-family: "PublicSans", Arial, sans-serif;
+}
+
+.index-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.index-page main {
+  width: min(680px, calc(100% - 32px));
+  padding: 48px 0;
+  text-align: center;
+}
+
+.index-page h1 {
+  margin: 0 0 16px;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.2;
+}
+
+.index-page p {
+  margin: 0 0 30px;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.index-page nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.index-page nav a {
+  display: flex;
+  min-height: 92px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.index-page nav a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  border-color: var(--accent);
+}
+
+.index-page nav a:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+  .legal-page main {
+    width: calc(100% - 24px);
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .index-page nav {
+    grid-template-columns: 1fr;
+  }
+
+  .index-page main {
+    padding: 32px 0;
+  }
+}

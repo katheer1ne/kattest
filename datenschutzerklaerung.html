@@ -25,6 +25,15 @@
         box-sizing: border-box;
       }
 
+      <script>
+      document.querySelectorAll("h1, h2, h3, h4").forEach(el => {
+          el.innerHTML = el.innerHTML.replace(
+              /([ÄÖÜäöüßẞ])/g,
+              '<span class="umlaut">$1</span>'
+          );
+      });
+      </script>
+
       body {
         margin: 0;
         background-color: #272829;
@@ -78,6 +87,7 @@
         font-family:
           "NeutralFaceBold",
           Segoe UI;
+        text-transform: uppercase;
       }
       h1 {
         margin: 0 0 32px;
